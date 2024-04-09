@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Adding ARIA labels for better screen-reader experience -->
+        <a href="#" class="logo" aria-label="Logo: Home">logo</a>
+        <div
+          class="burger"
+          role="button"
+          onclick="toggleMenu()"
+          tabindex="0"
+          aria-label="Menu Toggle"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <!-- Initially hide the menu in HTML -->
+        <div id="menu" class="hide">
+          <a href="#" class="link">HOME</a>
+          <a href="#" class="link">PROJECTS</a>
+          <a href="#" class="link">ABOUT</a>
+          <a href="#" class="link">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Keeping JS at the end to ensure HTML is already loaded -->
+    <script src="app.js"></script>
+  </body>
+</html>

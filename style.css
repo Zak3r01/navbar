@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:rgb(255, 196, 0);
+}
+
+.line {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+header {
+    background-color: rgb(11, 184, 184);
+    padding: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.burger:hover {
+    opacity: 0.6;
+}
+
+.link:hover {
+    color: blueviolet;
+    font-size: 1.2rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width:476px) {
+    .burger {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+}
